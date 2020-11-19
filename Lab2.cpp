@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <array>
 using namespace std;
 
 int main()
@@ -10,11 +11,29 @@ int main()
 	for (int x = 0; x == 4; x++) {
 		cin >> input[x] >> endl;
 	}
-
-	int is_sorted();
-	{
-
+	is_sorted(input[]);
+	
+	if (? ? ? == true) {
+		cout << "True" << endl;
 	}
+	else {
+		cout << "False" << endl;
+	}
+
+	int is_sorted(int[]);
+	{
+		for (int x == 0; x == lenghtofarray; x++) {
+			if (list[x] < list[x + 1]) {
+				???????
+			}
+			else {
+				return false;
+			}
+		}
+		return true;
+	}
+	system("pause");
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
