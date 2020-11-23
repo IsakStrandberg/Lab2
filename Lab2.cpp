@@ -5,36 +5,48 @@
 #include <array>
 using namespace std;
 
-int main()
+int is_sorted(int input[])
 {
-	int input[];
-	for (int x = 0; x == 4; x++) {
-		cin >> input[x] >> endl;
+	bool b = true;
+	for(int x = 0; x < sizeof(input)-1; x++) {
+		if (input[x] < input[x + 1]) {
+			
+		}
+		else {
+			b = false;
+		}
 	}
-	is_sorted(input[]);
-	
-	if (? ? ? == true) {
-		cout << "True" << endl;
+	if (b == true) {
+		return 1;
 	}
 	else {
+		return 0;
+	}
+	
+}
+
+int main()
+{
+	int input[4];
+	for(int x = 0; x < 4; x++) {
+		cin >> input[x];
+	}
+	int z;
+	z = is_sorted(input);
+	
+	if (z == 1) {
+		cout << "True" << endl;
+	}
+	else if(z == 0){
 		cout << "False" << endl;
 	}
 
-	int is_sorted(int[]);
-	{
-		for (int x == 0; x == lenghtofarray; x++) {
-			if (list[x] < list[x + 1]) {
-				???????
-			}
-			else {
-				return false;
-			}
-		}
-		return true;
-	}
+	
 	system("pause");
 	return 0;
 }
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
