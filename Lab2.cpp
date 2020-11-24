@@ -22,24 +22,24 @@ int is_sorted(int input[])
 	else {
 		return 0;
 	}
-	///////////////////////////////////////////////////////////////////
+	////////
 }
 
 int main()
 {
 	int input[4];
-	for(int x = 0; x < 4; x++) {
+	for(int x = 0; x < 4; x++) {//adds a number to each array
 		cin >> input[x];
 	}
 	int z;
 	z = is_sorted(input);
 	
-	if (z == 1) {
+	if (z == 1) {// i did this instead of making a bool value here
 		cout << "True" << endl;
 	}
 	else if(z == 0){
 		cout << "False" << endl;
-	}
+	}//
 
 	
 	system("pause");
